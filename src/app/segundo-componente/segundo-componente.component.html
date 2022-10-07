@@ -1,5 +1,13 @@
 <h2>Aprofundando conhecimentos em componentes</h2>
 
-<p>{{ nome | uppercase }}</p>
 
-<p>Data de nascimento: {{ dataNascimento | date: "dd/MM/yyyy" }}</p>
+<img [src]="urlImagem" width="300" height="600">
+
+
+<p>{{ nome | uppercase }}</p>
+<p>Data de nascimento: {{ dataNascimento | date: "dd/MM/yyyy" }} utilizando pipes no modelo "dd/MM/yyyy"</p>
+
+
+
+<button (click)="mostrarDataNascimento()">Data Nascimento</button>
+

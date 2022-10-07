@@ -12,8 +12,13 @@ export class SegundoComponenteComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  nome = "Matheus";
+  nome = "Matheus, usando pipe de uppercase";
 
   dataNascimento = "1996-03-26";
 
+  urlImagem = "/assets/matheus.jpg";
+
+  mostrarDataNascimento(){
+    alert("A data de nascimento de matheus é: " + this.dataNascimento);
+  }
 }

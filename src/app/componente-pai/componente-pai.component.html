@@ -1,0 +1,3 @@
+<h3>O sobrenome está definido no componente pai: {{ sobrenome }}</h3>
+<h3>O nome completo é: {{ filho.nome }} {{ sobrenome }}</h3>
+<app-componente-filho [sobrenome] = "sobrenome"  (mostraNome) = "mostrarNomeCompleto($event)" #filho></app-componente-filho>
